@@ -1,0 +1,72 @@
+.gallery .row .two {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery .row .two .col {
+  width: 49%;
+  position: relative;
+}
+.gallery .row .two .col .img {
+  position: relative;
+}
+.gallery .row .two .col .img img {
+  width: 100%;
+  object-fit: cover;
+}
+.gallery .row .two .col .img span {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(255, 78, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 15px;
+  right: 15px;
+}
+.gallery .row .two .col .main {
+  padding: 15px;
+}
+.gallery .row .two .col .main .detail {
+  display: none;
+}
+.gallery .row .two .col .btn {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  display: none;
+  transition: 0.3s;
+}
+.gallery .row .two .col:hover .btn {
+  display: block;
+}
+.gallery .row .two .col .btn .btn-view {
+  border: 1px solid #56cfe1;
+  background-color: transparent;
+  padding: 10px 35px;
+  border-radius: 30px;
+  color: #56cfe1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.gallery .row .two .col .btn .btn-view:hover {
+  background-color: #56cfe1;
+  color: white;
+}
+
+.gallery .row .two .col .btn .btn-shop {
+  border: 1px solid #56cfe1;
+  background-color: #56cfe1;
+  padding: 10px 35px;
+  border-radius: 30px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.gallery .row .two .col .btn .btn-shop:hover {
+  background-color: transparent;
+  color: #56cfe1;
+}
